@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+.app  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+.todo-list {
+    background-color: #0B2027;
+    padding: 1rem;
+    font-family: "Space Mono", monospace;
+    min-width: 400px;
+    min-height: 350px;
+
+    
+}
+
+.title {
+    border-bottom: 1px solid rgba(95, 247, 221, 0.623);
+
+    color: rgba(95, 247, 221, 0.623);
+
+    font-family: "BioRhyme", serif;
+    font-size: 1.5rem;
+}
+
+.form {
+    
+    display: flex;
+    justify-content: center;  
+}
+
+.form-input, 
+.form-button {
+    border-radius: 0;
+    padding: 0.25rem .8rem;
+    font-size: .8rem;
+    color: rgb(6, 61, 9);
+
+}
+
+
+.form-button {
+    background: rgba(95, 247, 221, 0.623);
+    border-style: none;
+    border: 1px;
+    
+    cursor: pointer;
+    text-transform: uppercase;
+
+    margin-left: .25rem;
+}
+
+.form-input {
+    outline: none;
+    outline-offset: -2px;
+    padding: .5rem 2rem;
+}
+
+.form-button:hover{
+    background:rgba(89, 236, 211, 0.877)
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    
+}
+
+.task {
+    background-color: rgba(95, 247, 221, 0.623);
+    color: rgb(6, 61, 9);
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: .3rem; 
+    padding: 1rem 3rem;
+
+}
+
+.check-button, .delete-button {
+    background-color: rgb(56, 190, 67);
+    border: none;
+    box-shadow: 0 0 8px rgb(6, 62, 10);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding: .6rem;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.task.done .check-icon {
+    background-color: #0B2027;;
+    color: white;
+}
+
+.content {
+    margin: 0;
+}
+
+.task.done .content {
+    text-decoration: line-through;
+}
+
+.check-icon {
+    display: block;
+    padding: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+  }
